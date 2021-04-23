@@ -1,0 +1,28 @@
+.shine{
+	position: fixed;
+	top: -15px;
+	left: -15px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/clock.png) 50% 50% no-repeat;
+	background-size: contain;
+	z-index: 2;
+	animation: shine 2s ease-out 0s forwards;
+}
+ 
+@keyframes shine{
+	0%{
+		transform: translateY(0) rotate(-5deg);
+		opacity: 0;
+	}
+	5%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(50px) rotate(5deg);
+		opacity: 0;
+	}
+}
